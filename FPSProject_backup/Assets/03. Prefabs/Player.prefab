@@ -328,6 +328,17 @@ MonoBehaviour:
   pitchRoot: {fileID: 3714542023151576989}
   gunMuzzle: {fileID: 3359620278094707804}
   mouseSensitivity: 2
+  fireRate: 0.1
+  zoomFOV: 20
+  normalFOV: 60
+  zoomSpeed: 10
+  zoomSensitivityMultiplier: 0.5
+  gunRoot: {fileID: 0}
+  normalPos: {x: 0.4, y: -0.3, z: 0.5}
+  zoomPos: {x: 0, y: -0.1, z: 0.8}
+  alignSpeed: 10
+  crosshair: {fileID: 0}
+  scopeOverlay: {fileID: 0}
   maxAmmo: 30
   currentAmmo: 0
   totalClips: 3
@@ -380,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.32
+      value: 1.3199997
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755, type: 3}
       propertyPath: m_LocalRotation.w
@@ -388,7 +399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755, type: 3}
       propertyPath: m_LocalRotation.y
@@ -396,7 +407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6239359517610320279, guid: 67f716418f7ba2146a845739c7782755, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
