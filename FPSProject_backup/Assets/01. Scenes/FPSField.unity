@@ -1441,6 +1441,14 @@ PrefabInstance:
       propertyPath: scoreManager
       value: 
       objectReference: {fileID: 48338536}
+    - target: {fileID: 3359620278094707804, guid: 797c337cbd923ac449b83c383ea596e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359620278094707804, guid: 797c337cbd923ac449b83c383ea596e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.87
+      objectReference: {fileID: 0}
     - target: {fileID: 5928376596384607810, guid: 797c337cbd923ac449b83c383ea596e5, type: 3}
       propertyPath: m_Name
       value: Player
