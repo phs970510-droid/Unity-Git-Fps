@@ -39,6 +39,8 @@ public class PlayerShooter : MonoBehaviour
     [Header("게임 관리")]
     [SerializeField] public ScoreManager scoreManager;
 
+    public bool isInventoryOpen = false;
+
     private float pitch;
     private float nextFireTime;
     private bool isZooming;
@@ -65,6 +67,9 @@ public class PlayerShooter : MonoBehaviour
 
     void Update()
     {
+        if (InputLockManager.Blocked)
+            return;
+
         HandleLook();
         HandleFire();
         HandleReload();
