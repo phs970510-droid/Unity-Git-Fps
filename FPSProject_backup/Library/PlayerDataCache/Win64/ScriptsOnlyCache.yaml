@@ -2,9 +2,16 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bullet
+    - EnemyChase
+    - EnemyHealth
+    - EnemySight
+    - InventoryUI
     - PlayerControl
+    - PlayerJump
     - PlayerShooter
     - ScoreManager
+    Unity.AI.Navigation.dll:
+    - Unity.AI.Navigation.NavMeshSurface
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -18,12 +25,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -33,6 +34,8 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
+    - UnityEngine.UI.Image
   serializedClasses:
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
@@ -51,6 +54,7 @@ ScriptsOnlyBuild:
     - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
@@ -96,31 +100,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 17272}
+      Script: {instanceID: 16714}
     - Class: 114
-      Script: {instanceID: 17706}
+      Script: {instanceID: 17336}
     - Class: 114
-      Script: {instanceID: 17860}
+      Script: {instanceID: 17772}
     - Class: 114
-      Script: {instanceID: 17920}
+      Script: {instanceID: 17930}
     - Class: 114
-      Script: {instanceID: 19228}
+      Script: {instanceID: 17990}
     - Class: 114
-      Script: {instanceID: 19488}
+      Script: {instanceID: 19316}
     - Class: 114
-      Script: {instanceID: 20210}
+      Script: {instanceID: 19580}
     - Class: 114
-      Script: {instanceID: 20776}
+      Script: {instanceID: 19978}
     - Class: 114
-      Script: {instanceID: 20936}
+      Script: {instanceID: 20036}
     - Class: 114
-      Script: {instanceID: 21192}
+      Script: {instanceID: 20312}
     - Class: 114
-      Script: {instanceID: 21266}
+      Script: {instanceID: 20496}
     - Class: 114
-      Script: {instanceID: 21480}
+      Script: {instanceID: 20866}
     - Class: 114
-      Script: {instanceID: 22864}
+      Script: {instanceID: 20908}
+    - Class: 114
+      Script: {instanceID: 21068}
+    - Class: 114
+      Script: {instanceID: 21328}
+    - Class: 114
+      Script: {instanceID: 21404}
+    - Class: 114
+      Script: {instanceID: 21542}
+    - Class: 114
+      Script: {instanceID: 21626}
+    - Class: 114
+      Script: {instanceID: 22810}
+    - Class: 114
+      Script: {instanceID: 23016}
+    - Class: 114
+      Script: {instanceID: 23028}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -131,13 +151,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -280,7 +306,13 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 725893ff7fa33d3c940e8fc69f147f4f
+      Hash: 975a5f2f0eec08778a2b07af8ad8f556
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerHealth
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad9c9588ce53ba30c228eb623fbf8c8
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Bullet
@@ -580,6 +612,18 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 8a2f78c25d5e92eb97ee5544a162a2e9
+    assemblyName: Unity.AI.Navigation
+    namespaceName: Unity.AI.Navigation
+    className: NavMeshLink
+  - hash:
+      serializedVersion: 2
+      Hash: 67850bcac181dd8fd22157d43f4ed871
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnemySight
+  - hash:
+      serializedVersion: 2
       Hash: f2098fcd8ee983a05ec192f63904298f
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -658,6 +702,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 061a5d77ce0aa52a60c21c566c6d8af2
+    assemblyName: Unity.AI.Navigation
+    namespaceName: Unity.AI.Navigation
+    className: NavMeshModifierVolume
+  - hash:
+      serializedVersion: 2
       Hash: d82086405f46de14829f6b4bcbdd8fc9
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -668,6 +718,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
     className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: d55992199bd2f5a5502658391cdf8ba7
+    assemblyName: Unity.AI.Navigation
+    namespaceName: Unity.AI.Navigation
+    className: NavMeshSurface
   - hash:
       serializedVersion: 2
       Hash: 9dd54ce33440072d6692a67e0c384ad1
@@ -692,6 +748,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 9bb5e7df63ad10d956ac32e0fb9f90f7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnemyHealth
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -760,10 +822,22 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
+      Hash: 68f2cb287af2eee1f639824485a3402b
+    assemblyName: Unity.AI.Navigation
+    namespaceName: Unity.AI.Navigation
+    className: NavMeshModifier
+  - hash:
+      serializedVersion: 2
       Hash: 672716ae97f6ddb615fa5ac3ec9da349
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 173a0cb20bdb15ebcb3c2574280ef74e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EnemyChase
   - hash:
       serializedVersion: 2
       Hash: 8bbce9932f67ad8e7f4eefec87800f94
@@ -772,7 +846,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: ec4757f4578fd10829fa7b9901f0fdaa
+      Hash: 38e40a6798f997097d49bb33d4443658
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ScoreManager
@@ -928,6 +1002,12 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: fee11a7acb69865e7a002ff8014ae117
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerJump
+  - hash:
+      serializedVersion: 2
       Hash: b30c8635462e66ac20f4241106119f77
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -946,7 +1026,13 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: f134b1c715cd35d8ba66a48244a585d5
+      Hash: d5ae3c44359a2ede7ddbdaa80b694fd4
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: InventoryUI
+  - hash:
+      serializedVersion: 2
+      Hash: 81a42327e9eb4047fff9e29776365c21
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerShooter
