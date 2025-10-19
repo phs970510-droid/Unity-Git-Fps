@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1101
     height: 619
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 43
+  controlID: 124
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -425,9 +425,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ec5f0000
-    m_LastClickedID: 24556
-    m_ExpandedIDs: 00000000b45f0000b65f0000b85f0000ba5f000000ca9a3b
+    m_SelectedIDs: da5f0000
+    m_LastClickedID: 24538
+    m_ExpandedIDs: 00000000b65f0000b85f0000ba5f0000bc5f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -455,7 +455,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b45f0000b65f0000b85f0000ba5f0000
+    m_ExpandedIDs: 00000000b65f0000b85f0000ba5f0000bc5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -486,18 +486,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: InventoryUI
-      m_OriginalName: InventoryUI
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 24566
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 7}
     m_CreateAssetUtility:
@@ -595,9 +595,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f65f0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2cfbffff
+      m_ExpandedIDs: 80d1ffffd4d1fffffed4fffff6e7ffff84f5ffff2cfbfffffe5b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1014,9 +1014,9 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.04157177, y: -0.38119403, z: 0.017188521, w: 0.9234193}
     speed: 2
-    m_Value: {x: 0.041571025, y: -0.3811872, z: 0.017188214, w: 0.9234028}
+    m_Value: {x: -0.04157177, y: 0.38119403, z: -0.017188521, w: -0.9234193}
   m_Size:
-    m_Target: 17.242052
+    m_Target: 16.46616
     speed: 2
     m_Value: 17.242052
   m_Ortho:
