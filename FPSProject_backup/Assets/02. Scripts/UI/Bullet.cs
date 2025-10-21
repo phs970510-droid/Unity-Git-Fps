@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
     {
         if (owner == BulletOwner.Player && other.CompareTag("EnemyHead"))
         {
-            EnemyHealth enemy = other.GetComponentInParent<EnemyHealth>();
+            EnemyBase enemy = other.GetComponentInParent<EnemyBase>();
             if (enemy != null)
             {
                 enemy.TakeDamage(baseDamage * 3);
@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour
         }
         else if (owner == BulletOwner.Player && other.CompareTag("EnemyBody"))
         {
-            EnemyHealth enemy = other.GetComponentInParent<EnemyHealth>();
+            EnemyBase enemy = other.GetComponentInParent<EnemyBase>();
             if (enemy != null)
             {
                 enemy.TakeDamage(baseDamage);
